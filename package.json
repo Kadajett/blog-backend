@@ -1,0 +1,28 @@
+{
+  "name": "blog-api",
+  "version": "0.0.1",
+  "description": "An api for a blog system because I like to re-invent wheels and shit.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test-dat-shit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kadajett/blog-backend.git"
+  },
+  "keywords": [
+    "blog",
+    "api",
+    "node"
+  ],
+  "author": "Jeremy Stover (Kadajett)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kadajett/blog-backend/issues"
+  },
+  "homepage": "https://github.com/Kadajett/blog-backend#readme",
+  "dependencies": {
+    "express": "^4.13.3",
+    "mongoose": "^4.2.4"
+  }
+}
