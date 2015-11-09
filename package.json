@@ -22,7 +22,10 @@
   },
   "homepage": "https://github.com/Kadajett/blog-backend#readme",
   "dependencies": {
+    "body-parser": "^1.14.1",
     "express": "^4.13.3",
-    "mongoose": "^4.2.4"
+    "lodash": "^3.10.1",
+    "mongoose": "^4.2.4",
+    "prompt": "^0.2.14"
   }
 }
