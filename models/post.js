@@ -1,5 +1,5 @@
 // var connection = require('../modules/Connection');
-// var mongoose = require('mongoose');
+var mongoose = require('mongoose');
 
 
 (function(){
@@ -18,20 +18,21 @@
     })
   }
 
-  Post.init = function(express, mongoose){
-
+  function setupRoutes(express){
     var router = express.Router();
     router.route('/posts')
       .get(function(req, res) {
+        console.log("Posts: GET: ", req.body);
         Post
           .model
           .find(function(err, result) {
+            console.log("Searching Post Model");
             if (err) {
               res.send(err);
               console.error(err);
             }
             res.send(result);
-            // console.log("Saved Posts: ", result);
+            console.log("Saved Posts: ", result);
           })
       })
       .post(function(req, res) {
@@ -55,6 +56,14 @@
         }
       });
       return router;
+  }
+  // @ghDox *Start*
+  // @params
+  // @ghDox *End*
+  Post.init = function(express, mongoose){
+    setUpModels(mongoose);
+    var router = setupRoutes(express);
+    return router;
   }
   module.exports.Post = function(){
     return Post;
