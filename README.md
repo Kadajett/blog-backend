@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/Kadajett/blog-backend.png?label=ready&title=Ready)](https://waffle.io/Kadajett/blog-backend)
 # Blog API, because fuck the wheel.
 
 ## Endpoints
